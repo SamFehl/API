@@ -1,6 +1,6 @@
-const pool = require('pg');
+const Pool = require('pg').Pool;
 
-const pool = new pool({
+const pool = new Pool({
     //Local Connection
     ///*
     user: "sjfehl",
