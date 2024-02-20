@@ -15,7 +15,8 @@ app.get('/',(req,res)=> {
     res.send("Hello world!")
 });
 
-app.use("/apiv1/", userRoutes);
+//API Route
+app.use("/api/v1/users", userRoutes);
 
 //Port to run application
 app.listen(5503, () => {
