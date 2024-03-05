@@ -3,11 +3,11 @@ const Pool = require('pg').Pool;
 const pool = new Pool({
     //Local Connection
     ///*
-    user: "sjfehl",
+    user: "postgres",
     host: "localhost",
     password: "@gL22031621384",
-    database: "users",
-    port: "5503",
+    database: "api",
+    port: "5432",
     //*/
 
     //Remote Connection
