@@ -33,9 +33,18 @@ const modUser = (req, res) => {
     });
 };
 
+//Get User by  ID
+const getByID = (req, res) => {
+    pool.query(queries.getByID, (error, results) => {
+        if (error) throw error;
+        res.status(200).json(results.rows);
+    });
+};
+
 module.exports = {
     getUsers,
     getId,
     addUser,
     modUser,
+    getByID,
 };
