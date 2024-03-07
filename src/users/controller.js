@@ -17,23 +17,25 @@ const getId = (req, res) => {
     });
 };
 
-//Add New Data by Param
+//Add New Data by Param --- POST
 const addUser = (req, res) => {
-    pool.query(queries.addUser, (error, results) => {
+    const [id, first, last, email, phone] = req.body;
+    pool.query(queries.addUser, [id, first, last, email, phone], (error, results) => {
         if (error) throw error;
-        res.status(200).json(results.rows);
+        res.status(200).send("Added new user.");
     });
 };
 
-//Modify Data by Param
+//Modify Data by Param --- PUT
 const modUser = (req, res) => {
-    pool.query(queries.modUser, (error, results) => {
+    const [id, first, last, email, phone] = req.body; 
+    pool.query(queries.modUser, [id, first, last, email, phone], (error, results) => {
         if (error) throw error;
-        res.status(200).json(results.rows);
+        res.status(200).send("Updated user successfully.");
     });
 };
 
-//Get User by  ID
+//Get Single User by  ID
 const getByID = (req, res) => {
     pool.query(queries.getByID, (error, results) => {
         if (error) throw error;
