@@ -9,44 +9,38 @@ const getUsers = (req, res) => {
     });
 };
 
-//Get Data by Param
-const getId = (req, res) => {
-    pool.query(queries.getId, (error, results) => {
+//Get User by Param (ID)
+const getByID = (req, res) => {
+    const id = parseInt(req.params.id);
+    pool.query(queries.getByID, [id], (error, results) => {
         if (error) throw error;
         res.status(200).json(results.rows);
     });
 };
 
-//Add New Data by Param --- POST
+//Add User
 const addUser = (req, res) => {
-    const [id, first, last, email, phone] = req.body;
+    const {id, first, last, email, phone} = req.body;
     pool.query(queries.addUser, [id, first, last, email, phone], (error, results) => {
         if (error) throw error;
-        res.status(200).send("Added new user.");
+        res.status(200).send("Added new user successfully.");
     });
 };
 
 //Modify Data by Param --- PUT
 const modUser = (req, res) => {
-    const [id, first, last, email, phone] = req.body; 
-    pool.query(queries.modUser, [id, first, last, email, phone], (error, results) => {
+    //const id = parseInt(req.params.id);
+    const {first, last, email, phone, id} = req.body; 
+    pool.query(queries.modUser, [first, last, email, phone, id], (error, results) => {
         if (error) throw error;
         res.status(200).send("Updated user successfully.");
     });
 };
 
-//Get Single User by  ID
-const getByID = (req, res) => {
-    pool.query(queries.getByID, (error, results) => {
-        if (error) throw error;
-        res.status(200).json(results.rows);
-    });
-};
-
 module.exports = {
     getUsers,
-    getId,
+    getByID,
     addUser,
     modUser,
-    getByID,
+
 };
