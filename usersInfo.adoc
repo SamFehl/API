@@ -1,3 +1,8 @@
 # Users API
 
 ## What is the Users API?
+This is the code behind the connection between the users database and the frontend website, which allows people to view, add, and modify users within the database.
+
+## What code was used?
+The backend uses Javascript and Node.JS to operate. The database runs on PostgreSQL using PGAdmin4. The frontend uses Javascript, HTML, and CSS. The website and database connections are hosted on Render.
+
