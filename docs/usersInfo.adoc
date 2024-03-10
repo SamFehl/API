@@ -17,10 +17,18 @@ This is the code behind the connection between the users database and the fronte
 ## What code was used?
 The backend uses Javascript and Node.JS to operate. The database runs on PostgreSQL using PGAdmin4. The frontend uses Javascript, HTML, and CSS. The website and database connections are hosted on Render.
 
-[grid="rows",formet="csv"]
-[options="header","cols="^,<,<s,<,>m"]
-|==========================
-Users API, GitHub Location, Local Location, Online Location, Languages, Version
-`{USERS_API}`,`{GITHUB_LOC}`,`{LOCAL_LOC}`,`{ONLINE_LOC}`,`{LANGUAGES}`,`{VERSION}`
-|==========================
+[cols="1,1"]
+|===
+|Cell in column 1, header row |Cell in column 2, header row 
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+
+|Cell in column 1, row 3
+|Cell in column 2, row 3
+
+|Cell in column 1, row 4
+|Cell in column 2, row 4
+|===
+
 image::userFlow.png[alt=logo,width=2550px][orientation=portrait]
