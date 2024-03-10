@@ -1,6 +1,5 @@
 # Users API
 
-:USERS_API: Users API
 :GITHUB_LOC: API
 :LOCAL_LOC: http://localhost:5503/api/v1/users
 :ONLINE_LOC: https://api-h8zv.onrender.com/api/v1/users 
@@ -17,18 +16,11 @@ This is the code behind the connection between the users database and the fronte
 ## What code was used?
 The backend uses Javascript and Node.JS to operate. The database runs on PostgreSQL using PGAdmin4. The frontend uses Javascript, HTML, and CSS. The website and database connections are hosted on Render.
 
-[cols="1,1"]
+[cols="4,2"]
 |===
-|Cell in column 1, header row |Cell in column 2, header row 
+|GitHub Location |Local Location |Render Location |Languages |Version 
 
-|Cell in column 1, row 2
-|Cell in column 2, row 2
-
-|Cell in column 1, row 3
-|Cell in column 2, row 3
-
-|Cell in column 1, row 4
-|Cell in column 2, row 4
+|API |http://localhost:5503/api/v1/users |https://api-h8zv.onrender.com/api/v1/users |Javascript, HTML, CSS |V1
 |===
 
 image::userFlow.png[alt=logo,width=2550px][orientation=portrait]
