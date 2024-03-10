@@ -9,6 +9,7 @@
 
 :imagesdir: images
 
+image::users.png[alt=logo,width=250px][orientation=portrait]
 
 ## What is the Users API?
 This is the code behind the connection between the users database and the frontend website, which allows people to view, add, and modify users within the database.
