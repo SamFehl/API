@@ -3,7 +3,7 @@
 
 :USERS_API: Users API
 :GITHUB_LOC: API
-:LANGUAGES: Javascript, HTML, CSS
+:LANGUAGES: Javascript
 :VERSION: V1
 
 ## What is the Users API?
