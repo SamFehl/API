@@ -3,7 +3,6 @@
 
 :USERS_API: Users API
 :GITHUB_LOC: API
-:GITHUB_LOC: FrontEnd
 :LANGUAGES: Javascript, HTML, CSS
 :VERSION: V1
 
