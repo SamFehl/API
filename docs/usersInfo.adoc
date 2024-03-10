@@ -16,11 +16,15 @@ This is the code behind the connection between the users database and the fronte
 ## What code was used?
 The backend uses Javascript and Node.JS to operate. The database runs on PostgreSQL using PGAdmin4. The frontend uses Javascript, HTML, and CSS. The website and database connections are hosted on Render.
 
-[cols="2,4"]
+
 |===
 |GitHub Location |Local Location |Render Location |Languages |Version 
 
-|API |http://localhost:5503/api/v1/users |https://api-h8zv.onrender.com/api/v1/users |Javascript, HTML, CSS |V1
+|API 
+|http://localhost:5503/api/v1/users 
+|https://api-h8zv.onrender.com/api/v1/users 
+|Javascript, HTML, CSS 
+|V1
 |===
 
 image::userFlow.png[alt=logo,width=2550px][orientation=portrait]
