@@ -18,6 +18,6 @@ The backend uses Javascript and Node.JS to operate. The database runs on Postgre
 [grid="rows",formet="csv"]
 [options="header","cols="^,<,<s,<,>m"]
 |==========================
-Users API, GitHub Location, Languages, Version
+Users API, GitHub Location, Local Location, Online Location, Languages, Version
 `{USERS_API}`,`{GITHUB_LOC}`,`{LOCAL_LOC}`,`{ONLINE_LOC}`,`{LANGUAGES}`,`{VERSION}`
 |==========================
