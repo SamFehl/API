@@ -23,4 +23,4 @@ The backend uses Javascript and Node.JS to operate. The database runs on Postgre
 Users API, GitHub Location, Local Location, Online Location, Languages, Version
 `{USERS_API}`,`{GITHUB_LOC}`,`{LOCAL_LOC}`,`{ONLINE_LOC}`,`{LANGUAGES}`,`{VERSION}`
 |==========================
-image::userFlowGRAPH.png[alt=logo,width=250px][orientation=portrait]
+image::userFlow.png[alt=logo,width=250px][orientation=portrait]
