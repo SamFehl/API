@@ -1,4 +1,11 @@
 # Users API
+:imagesdir: images
+
+:USERS_API: Users API
+:GITHUB_LOC: API
+:GITHUB_LOC: FrontEnd
+:LANGUAGES: Javascript, HTML, CSS
+:VERSION: V1
 
 ## What is the Users API?
 This is the code behind the connection between the users database and the frontend website, which allows people to view, add, and modify users within the database.
@@ -6,3 +13,9 @@ This is the code behind the connection between the users database and the fronte
 ## What code was used?
 The backend uses Javascript and Node.JS to operate. The database runs on PostgreSQL using PGAdmin4. The frontend uses Javascript, HTML, and CSS. The website and database connections are hosted on Render.
 
+[grid="rows",formet="csv"]
+[options="header","cols="^,<,<s,<,>m"]
+|=====================================
+Users API, GitHub Location, Languages, Version
+'{USERS_API}','{GITHUB_LOC}','{LANGUAGES}','{VERSION}'
+|=====================================
