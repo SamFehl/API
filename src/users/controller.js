@@ -37,20 +37,10 @@ const modUser = (req, res) => {
     });
 };
 
-//Get List of All User IDs
-const getListID = (req, res) => {
-    const idList = parseInt(req.params.id);
-    pool.query(queries.getListID, [idList], (error, results) => {
-        if (error) throw error;
-        res.status(200).json(results.rows);
-    });
-};
-
 module.exports = {
     getUsers,
     getByID,
     addUser,
     modUser,
-    getListID,
 
 };
